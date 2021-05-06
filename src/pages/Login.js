@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+    Switch,
+    Route
+} from "react-router-dom";
+import SignUpForm from '../components/Login/SignUpForm';
+import LoginForm from '../components/Login/LoginForm';
+import '../style/Login.css'
 
 class Login extends React.Component {
     handleSubmit(event) {
@@ -8,16 +15,14 @@ class Login extends React.Component {
     render() {
         return (
             <div id="login">
-                <div className="login-form">
-                    <p className="heading">Login to your account</p>
-                    <form onSubmit={this.handleSubmit}>
-                        <label for="username">User Name</label>
-                        <div><input type="text" name="username"></input></div>
-                        <label for="password">Password</label>
-                        <div><input type="text" name="password"></input></div>
-                        <input className="submit-btn" type="submit" value="Login" ></input>
-                    </form>
-                </div>
+                <Switch>
+                    <Route path="/signup">
+                        <SignUpForm />
+                    </Route>
+                    <Route path="/login">
+                        <LoginForm />
+                    </Route>
+                </Switch>
             </div>
         )
     }
