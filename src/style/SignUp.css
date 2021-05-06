@@ -1,0 +1,21 @@
+#sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sign-up-form {
+    display: block;
+    padding: 10%;
+}
+
+.sign-up-form div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.submit-btn {
+    padding: 10px;
+}
