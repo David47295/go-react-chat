@@ -1,29 +1,44 @@
 import './App.css';
 import Home from './pages/Home';
-import Login from './pages/Login';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import NavigationBar from './components/NavigationBar'
+import { Col, Container, Row } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-      <Router>
-        <Switch>
-          <Route path="/signup">
-            <Login />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+    <div id="App">
+      <Container fluid className="test">
+        <Row className="h-100">
+          <Col sm={2}>
+            <NavigationBar />
+          </Col>
+          <Col>
+            <Router>
+              <Switch>
+                <Route path="/calendar">
+                  
+                </Route>
+                <Route path="/news">
+                  
+                </Route>
+                <Route path="/pokedex">
+                  
+                </Route>
+                <Route path="/">
+                  <Home />
+                </Route>
+              </Switch>
+            </Router>
+          </Col>
+        </Row>
+
+
+      </Container>
     </div>
   );
 }

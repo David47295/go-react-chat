@@ -1,22 +1,29 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Col, Row } from 'react-bootstrap';
+import Announcments from '../components/Home/Announcements';
 import '../style/Home.css'
 
 class Home extends React.Component {
     render() {
         return (
             <div id="home">
-                <div id="banner">
-                    <p>Welcome to Go Chat!</p>
-                    <div className="buttons">
-                        <Link id="sign-up-btn" to="/signup">
-                            <button>Sign Up</button>
-                        </Link>
-                        <Link id="login-btn" to="/login">
-                            <button>Login</button>
-                        </Link>
+                <Row className="h-25">
+                    <div id="banner">
+                        <h1>Serebii.net Remake</h1>
+                        <p>Welcome to the remake of Serebii.net, a more modern take on the internet's most expansive Pokemon database</p>
                     </div>
-                </div>
+                </Row>
+                <Row className="h-50">
+                    <Row id="content" className="align-self-center">
+                        <Col sm={8}>
+                            <Announcments />
+                        </Col>
+                        <Col sm={4}>
+                            In-Game Events
+                        </Col>
+                    </Row>
+                </Row>
+
             </div>
         )
     }
