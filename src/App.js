@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './pages/Home';
+import Pokedex from './pages/Pokedex';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,7 +15,7 @@ function App() {
     <div id="App">
       <Container fluid className="test">
         <Row className="h-100">
-          <Col sm={2}>
+          <Col sm={3}>
             <NavigationBar />
           </Col>
           <Col>
@@ -27,7 +28,7 @@ function App() {
                   
                 </Route>
                 <Route path="/pokedex">
-                  
+                  <Pokedex />
                 </Route>
                 <Route path="/">
                   <Home />

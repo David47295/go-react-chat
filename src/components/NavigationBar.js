@@ -21,7 +21,7 @@ class NavigationBar extends React.Component {
                 <Nav className="flex-column">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/">News & Events</Nav.Link>
-                        <Nav.Link href="/">Pokedex</Nav.Link>
+                        <Nav.Link href="/pokedex">Pokedex</Nav.Link>
                 </Nav>
             </Navbar>
         )

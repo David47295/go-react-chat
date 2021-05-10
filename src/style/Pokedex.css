@@ -1,0 +1,21 @@
+#pokemon-list {
+    display: flex;
+}
+
+#pokemon-list .pokedex-card {
+    height: 200px;
+    width: 200px;
+    /* margin-top: 3rem; */
+    margin-right: 1rem;
+    margin-bottom: 6rem;
+}
+
+#pokemon-list .pokedex-card .image {
+    height: 200px;
+    width: 200px;
+}
+
+
+#pokemon-list .pokedex-card .name {
+    margin: 0px;
+}
