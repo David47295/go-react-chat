@@ -17,7 +17,7 @@ class NavigationBar extends React.Component {
 
     render() {
         return (
-            <Navbar id="navigation-bar" expand="lg">
+            <Navbar id="navigation-bar" className="col-sm-3 position-fixed" expand="lg">
                 <Nav className="flex-column">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/">News & Events</Nav.Link>

@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div id="App">
-      <Container fluid className="test">
+      <Container fluid>
         <Row className="h-100">
           <Col sm={3}>
             <NavigationBar />

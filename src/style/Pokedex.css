@@ -1,5 +1,10 @@
 #pokemon-list {
     display: flex;
+    justify-content: center;
+}
+
+.banner {
+    background-color: green;
 }
 
 #pokemon-list .pokedex-card {
@@ -18,4 +23,8 @@
 
 #pokemon-list .pokedex-card .name {
     margin: 0px;
+}
+
+.test {
+    display: flex;
 }
