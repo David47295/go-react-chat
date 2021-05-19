@@ -21,14 +21,8 @@ function App() {
           <Col>
             <Router>
               <Switch>
-                <Route path="/calendar">
-                  
-                </Route>
-                <Route path="/news">
-                  
-                </Route>
-                <Route path="/pokedex">
-                  <Pokedex />
+                <Route path="/pokedex" component={Pokedex}>
+                  {/* <Pokedex /> */}
                 </Route>
                 <Route path="/">
                   <Home />
