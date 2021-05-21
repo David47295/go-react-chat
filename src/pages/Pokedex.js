@@ -50,7 +50,7 @@ class Pokedex extends React.Component {
         return (
             <div id="pokedex">
                 <Switch>
-                    <Route path="/pokedex/:id" component={Details} />
+                    <Route path="/pokedex/:name" component={Details} />
                     <Route path="/pokedex">
                         <Container fluid>
                             <Row className="sticky-top banner">

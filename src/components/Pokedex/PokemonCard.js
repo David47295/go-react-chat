@@ -9,8 +9,8 @@ class PokemonCard extends React.Component {
 
     onCardClick(event) {
         console.log("Clicked")
-        const match = matchPath(`/pokedex/${this.props.id}`, {
-            path: "/pokedex/:id",
+        const match = matchPath(`/pokedex/${this.props.name}`, {
+            path: "/pokedex/:name",
             exact: true,
             strict: false
         })
